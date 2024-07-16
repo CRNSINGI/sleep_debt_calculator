@@ -45,4 +45,31 @@ const getIdealSleepHours = () => {
     return idealHours * 7;
   }; // get the ideal sleep hours
 
+  const calculateSleepDebt = () => {
+    const actualSleepHours = 
+    getActualSleepHours();
+    const idealSleepHours = 
+    getIdealSleepHours();
+   // calculate sleep debt 
   
+  if(actualSleepHours === idealSleepHours)
+  {
+    console.log("You've got the perfect amount of sleep!");
+  
+  }
+  
+  else if(actualSleepHours > idealSleepHours) {
+    console.log("You've got " + (idealSleepHours - actualSleepHours) + "more hours of sleep this week.");
+  }
+  
+  else if(actualSleepHours < idealSleepHours) {
+    console.log("You should get some rest because you've slept " + (idealSleepHours - actualSleepHours) + "hours less than you should have this week.");
+  }
+  
+  else{
+    console.log("Error! Something went wrong, check your code");
+  }
+  }; // logic funtion: If actual sleep equals ideal sleep, greter or less 
+  
+  
+  calculateSleepDebt()
