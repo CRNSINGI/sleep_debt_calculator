@@ -36,3 +36,13 @@ const getSleepHours = day => {
   const getActualSleepHours = () => 
     getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday') + getSleepHours('sunday');
    // get sleep hours per each day of the week 
+
+console.log(getSleepHours('monday'));
+console.log(getActualSleepHours());
+
+const getIdealSleepHours = () => {
+    let idealHours = 8; 
+    return idealHours * 7;
+  }; // get the ideal sleep hours
+
+  
