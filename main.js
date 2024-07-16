@@ -32,3 +32,7 @@ const getSleepHours = day => {
       return "Error"
     }
   }; // how many hours of sleep function
+
+  const getActualSleepHours = () => 
+    getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday') + getSleepHours('sunday');
+   // get sleep hours per each day of the week 
